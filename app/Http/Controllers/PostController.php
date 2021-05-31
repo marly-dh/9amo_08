@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
+
+
+    // deletePost mist nog
+
+
     public function getPosts()
     {
         return Post::select('posts.id', 'users.username', 'posts.title', 'posts.short_description', 'posts.tags', 'posts.created_at')

@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class CommentController extends Controller
 {
+
+
+    // createComment mist nog
+
+
     public function getComments($post_id)
     {
         return Comment::select('comments.id', 'comments.username', 'comments.comment_data', 'posts.created_at')
