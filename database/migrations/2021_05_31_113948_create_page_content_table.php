@@ -20,7 +20,7 @@ class CreatePageContentTable extends Migration
             $table->text('text1');
             $table->text('text2');
             $table->string('img_url1', 255);
-            $table->string('img_ur2', 255);
+            $table->string('img_url2', 255);
             $table->text('banner_text');
             $table->string('banner_img_url', 255);
             $table->timestamps();
