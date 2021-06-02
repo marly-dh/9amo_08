@@ -7,10 +7,9 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
-
-
-    // deletePost mist nog
-
+    public function deletePost($id) {
+        return Post::destroy($id);
+    }
 
     public function getPosts()
     {
