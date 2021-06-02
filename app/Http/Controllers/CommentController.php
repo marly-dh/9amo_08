@@ -7,10 +7,13 @@ use Illuminate\Http\Request;
 
 class CommentController extends Controller
 {
-
-
-    // createComment mist nog
-
+    public function createComment($post_id, $username, $comment_data) {
+        return Comment::create([
+            'post_id' => $post_id,
+            'username' => $username,
+            'comment_data' => $comment_data
+        ]);
+    }
 
     public function getComments($post_id)
     {
