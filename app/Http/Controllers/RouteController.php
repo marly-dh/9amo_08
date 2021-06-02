@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Page;
 use Illuminate\Http\Request;
 
-class PagesController extends Controller
+class RouteController extends Controller
 {
     public function index($route) {
             $page = Page::select('*')

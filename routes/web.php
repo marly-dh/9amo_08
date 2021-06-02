@@ -12,5 +12,5 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', 'PagesController@homePage');
-Route::any('/{route}', 'PagesController@index')->where('route', '(.*)');;
+Route::get('/', 'RouteController@homePage');
+Route::any('/{route}', 'RouteController@index')->where('route', '(.*)');;
