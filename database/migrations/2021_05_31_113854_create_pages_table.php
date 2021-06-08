@@ -19,6 +19,7 @@ class CreatePagesTable extends Migration
             $table->string('subtitle', 100);
             $table->string('url', 100);
             $table->string('template', 100);
+            $table->text('content');
             $table->timestamps();
         });
     }
