@@ -1,13 +1,16 @@
 <html>
 @include('partials.header')
 <body>
-@section('sidebar')
-    This is the master sidebar
-@show
+<main style="min-height: 100vh">
+    @section('sidebar')
+        This is the master sidebar
+    @show
 
-<div class="container">
-    @yield('content')
-</div>
+    <div class="container">
+        @yield('content')
+    </div>
+</main>
 
+@include('partials.footer')
 </body>
 </html>
