@@ -13,4 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', 'RouteController@homePage');
+Route::get('/posts', 'RouteController@posts');
 Route::any('/{route}', 'RouteController@index')->where('route', '(.*)');;
