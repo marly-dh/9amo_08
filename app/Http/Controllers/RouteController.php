@@ -14,6 +14,15 @@ class RouteController extends Controller
                 ->first();
         return view("layouts.layout_{$page->template}", compact('page'));
     }
+    public function posts($slug) {
+//        $post = Post::where('slug',$slug)->first();
+//        if(!$post)
+//        {
+//            return redirect('/')->withErrors('requested page not found');
+//        }
+////        $comments = $post->comments;
+        return view('posts');
+    }
     public function homePage() {
         return view("home");
     }
